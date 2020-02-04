@@ -1,0 +1,27 @@
+﻿<Window x:Class="AdditionTaskWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdditionTaskWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="374" Name="textBox" Margin="10,10,0,0" TextWrapping="Wrap" Text="Chose assembly - click 'Open'" VerticalAlignment="Top" Width="581"/>
+        <Button Content="Open" Name="OpenButton" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="75" Click="OpenClick"/>
+        <Button Content="Clear" Name="ClearButton" HorizontalAlignment="Left" Margin="99,389,0,0" VerticalAlignment="Top" Width="75" Click="ClearClick"/>
+        <ListView HorizontalAlignment="Left" Height="374" Margin="596,10,0,0" VerticalAlignment="Top" Width="186">
+            <ListViewItem>
+                <StackPanel x:Name="StackPanel">
+                    <CheckBox IsChecked="False" Content="Class"></CheckBox>
+                    <CheckBox IsChecked="False" Content="Static Class"></CheckBox>
+                    <CheckBox IsChecked="False" Content="Interface"></CheckBox>
+                    <CheckBox IsChecked="False" Content="Constructors"></CheckBox>
+                    <CheckBox IsChecked="False" Content="Method"></CheckBox>
+                    <CheckBox IsChecked="False" Content="Property"></CheckBox>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+
+    </Grid>
+</Window>
